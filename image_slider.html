@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+img
+{
+height:400px;
+width:900px;
+border:10px solid purple;
+padding:20px;
+box-shadow:0px 0px 5px 2px black inset;
+border-radius:5px;
+}
+</style>
+<script>
+var arr=["5.jpg","n11.jpg","n12.jpg","5.jpg"];
+var i=0;
+function demo()
+{
+var im1=document.getElementById("img1");
+im1.src="img/"+arr[i];
+i++;
+if(i==arr.length)
+i=0;
+}
+window.setInterval("demo()",2000);
+</script>
+</head>
+<body>
+<center>
+<h1>SLIDER </h1>
+<hr/>
+<img src="C:\Techpile\JS\img\n8.jfif" id="img1"/>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+#dv {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 5px solid black;
+  color: black;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  font-family: impact;
+}
+</style>
+<script>
+function demo() {
+  var dv1 = document.getElementById("dv");
+  var im = document.getElementById("img1");
+
+  if (dv1.innerText === "ON") {
+    dv1.innerText = "OFF";
+    dv1.style.border = "5px solid green";
+    dv1.style.color = "green";
+    im.src = "img/on.png";
+  } else {
+    dv1.innerText = "ON";
+    dv1.style.border = "5px solid red";
+    dv1.style.color = "red";
+    im.src = "img/off.png";
+  }
+}
+</script>
+</head>
+<body>
+<center>
+  <img src="img/off.png" id="img1"/>
+  <br/><br/>
+  <div id="dv" onclick="demo()">ON</div>
+</center>
+</body>
+</html>

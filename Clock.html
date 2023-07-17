@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+body
+{
+background:black;
+}
+#dv
+{
+background:black;
+height:300px;
+width:900px;
+border:20px solid white;
+color:red	;
+font-size:180px;
+font-family:impact;
+text-align:center;
+line-height:300px;
+margin:150px auto;
+box-shadow:0px 0px 10px 8px white inset;
+}
+</style>
+<script>
+function demo()
+{
+var d=new Date()
+var dv1=document.getElementById("dv");
+dv1.innerText=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()
+}
+window.setInterval(demo,1000);
+</script>
+</head>
+<body>
+<div id="dv">HH:MM:SS</div>
+</body>
+</html>
